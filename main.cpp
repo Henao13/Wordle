@@ -84,14 +84,13 @@ void presentacion() {
 string aleatoria() {
   srand(time(NULL));
   int a;
-  a = 1 + rand() % 583;
+  a = 1 + rand() % 1785;
   cout << "numero aleatorio: " << a << endl;
   int temp = 1;
 
   string nombreArchivo = "data.txt";
   ifstream archivo(nombreArchivo.c_str());
   string linea;
-  // Obtener línea de archivo, y almacenar contenido en "linea"
   while (getline(archivo, linea)) {
     if (temp == a) {
       cout << "palabra de data.txt de esa posicion: " << linea << endl;
@@ -106,7 +105,6 @@ bool BancoPalabra(string palabra) {
   string nombreArchivo = "data.txt";
   ifstream archivo(nombreArchivo.c_str());
   string linea;
-  // Obtener línea de archivo, y almacenar contenido en "linea"
   while (getline(archivo, linea)) {
     if (linea == palabra) {
       cout << "efectivamente si pertenece al banco " << linea << endl;
