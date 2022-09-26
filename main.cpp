@@ -29,7 +29,6 @@ int main() {
     l1.add_at_head(a.substr(a.length() - 1 - temp, 1));
     temp += 1;
   }
-  l1.printList();
 
   temp = 0;
   int temp2 = 0;
@@ -93,7 +92,6 @@ string aleatoria() {
   string linea;
   while (getline(archivo, linea)) {
     if (temp == a) {
-      cout << "palabra de data.txt de esa posicion: " << linea << endl;
       return linea;
     }
     temp += 1;
