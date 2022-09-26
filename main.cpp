@@ -84,7 +84,7 @@ void presentacion() {
 string aleatoria() {
   srand(time(NULL));
   int a;
-  a = 1 + rand() % 1785;
+  a = 1 + rand() % 1791;
   cout << "numero aleatorio: " << a << endl;
   int temp = 1;
 
