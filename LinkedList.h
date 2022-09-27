@@ -70,18 +70,6 @@ int size(Node* l1)
         return 1 + size(l1);
     }
 }
-bool CompararPalabra(LinkedList l1){
-  int size1= size(l1.head);
-  int size2= size(this->head);
-  if(size2==size1)
-    {
-      return true;
-    }
-     else{
-       return false;
-    }
- }
-
 
 void comparar(LinkedList l1,int a){
   Node *aux=this->head;
