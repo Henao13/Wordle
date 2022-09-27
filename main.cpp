@@ -45,7 +45,7 @@ int main() {
       cout << "intento invalido" << endl;
       continue;
     }
-    if (l2.CompararPalabra(l1) == false) {
+    if (b!=a.length()) {
       cout << "La palabra ingresada contiene diferente tamaño de letras"
            << endl;
       continue;
